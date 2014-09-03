@@ -1,0 +1,26 @@
+<div class="modal" ng-controller="ImportCtrl">
+    <ion-header-bar class="bar-royal">
+      <button class="button button-clear" ng-click="importModal.hide()">
+        <i class="icon border-thin icon-right ion-close-round"></i>
+      </button>
+      <h1 class="title">Contacts</h1>
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" name="search" ng-model="search" placeholder="Search">
+        </label>
+      </div>
+      <ion-list>
+        <div ng-repeat="group in groups | filter: {contacts:[{name:{formatted:search}}]}" type="item-text-wrap">
+          <div class="item item-divider">
+          <p>{{group.label}}</p>
+          </div>
+          <ion-item ng-repeat="contact in group.contacts" ng-click="saveContact(contact)">
+            <p>{{contact.name.formatted}}
+          </ion-item>
+        </div>
+      </ion-list>
+    </ion-content>
+</div>

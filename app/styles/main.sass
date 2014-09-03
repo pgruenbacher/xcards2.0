@@ -1,0 +1,24 @@
+/*	
+	PATH TO THIS FILE: app/styles/main.sass
+	This includes all variables. We put them all (both ionic overrides and
+	our own variables) in one file so it is easy for anyone who @includes
+	our sass to locate and edit our variables.
+
+
+ 
+@import "_variables"
+
+/*
+	This includes the SASS/SCSS version of the ionic framework so that we can
+	customize it by overriding it's variables. To use this we need to make sure
+	that the CSS version is not included in app/index.html
+
+ 
+@import "../bower_components/ionic/scss/ionic"
+ 
+/*
+	These are the actual components of our apps that consume variables. We can
+	override ionic's own styles here or add additional styles of our own.
+
+@import "_app"
+

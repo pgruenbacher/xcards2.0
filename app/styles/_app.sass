@@ -1,0 +1,47 @@
+form i.icon.error
+	color: $myPrettyColor
+
+form input + i.icon.error 
+	display: none
+	margin-left: 8px
+
+ 
+form.ng-submitted input.ng-invalid + i.icon.error 
+	display: block
+
+ 
+form .has-error
+	border: 1px solid darken($assertive, 15%)
+
+ 
+form .has-success
+	border: 1px solid darken($balanced, 15%)
+
+ 
+form.ng-submitted input.ng-valid + i.icon.error
+	display: none
+.background-pink
+	background: pink
+.transition-05s
+	@include transition(left 0.2s ease-out, top 0.2s ease-out)
+.image-placeholder-icon
+	background: url('/images/ImageIcon.gif')
+.img-container
+	overflow: hidden
+	width: 200px
+	height: 130px
+	margin: 4px 10px 4px 10px
+.full-width
+	width: 100%
+	height: auto
+.full-height
+	height: 100%
+	width: auto
+.accelerator
+	-webkit-transform: translate3d(0, 0, 0)
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+

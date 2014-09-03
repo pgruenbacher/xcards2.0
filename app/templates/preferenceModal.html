@@ -1,0 +1,41 @@
+<div class="modal" ng-controller="PreferenceCtrl" broadcast-submit>
+	<ion-header-bar class="bar-royal">
+    	<button class="button button-clear" ng-click="preferenceModal.hide()">
+        	<i class="icon border-thin icon-right ion-close-round"></i>
+      	</button>
+  		<h1 class="title">Preference</h1>
+  		<button class="icon-right ion-ios7-arrow-forward button button-clear" submit-form="preference">
+  			Continue
+  		</button>
+    </ion-header-bar>
+	<ion-content class="has-header">
+		<form name="preferenceForm" submit-on="preference" on-valid-submit="continue()" novalidate>
+			<p>The user has multiple contact fields. Choose the ones you want us to use</p>
+			<ion-list ng-show="transfer.recipient.emails">
+			<p>Select Emails</p>
+		      <div ng-repeat="email in transfer.recipient.emails| filter: verified">
+		        <label class="item item-radio">
+				    <input type="radio" ng-value="{{$index}}" ng-model="$parent.data.emailID" required>
+					    <div class="item-content">
+					      {{email.value}}
+					    </div>
+				    <i class="radio-icon ion-checkmark"></i>
+			  	</label>
+		      </div>
+		    </ion-list>
+		    <ion-list ng-show="transfer.recipient.phoneNumbers">
+		    <p>Select Numbers</p>
+		      <div ng-repeat="phoneNumber in transfer.recipient.phoneNumbers| filter:{verified:true}">
+		        <label class="item item-radio">
+				    <input type="radio" ng-value="{{$index}}" ng-model="$parent.data.numberID" required> 
+					    <div class="item-content">
+					      {{phoneNumber.value | tel}}
+					    </div>
+				    <i class="radio-icon ion-checkmark"></i>
+			  	</label>
+		      </div>
+		    </ion-list>
+		    <button class="button button-block button-stable" type="submit">Continue</button>
+    	</form>
+	</ion-content>
+</div>

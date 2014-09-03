@@ -1,0 +1,40 @@
+<div class="modal" ng-controller="CreateUserCtrl" broadcast-submit>
+  <ion-header-bar class="bar-royal">
+    <button class="button button-clear" ng-click="createModal.hide()">
+      <i class="icon border-thin icon-right ion-close-round"></i>
+    </button>
+    <h1 class="title">Create </h1>
+    <button class="icon-right ion-ios7-arrow-forward button button-clear" submit-form="create">
+      Save
+    </button>
+  </ion-header-bar>
+  <ion-content has-header="true" padding="true">
+    <form name="createForm" submit-on="create" on-valid-submit="saveCreate(user)" novalidate>
+      <ion-list>
+        <div class="item item-divider">
+         Add email of person you would like to share credits with.
+        </div>
+        <label class="item item-input validated">
+          <i class="icon placeholder-icon" ng-class="(loading)?'ion-loading-b':'ion-email'"></i>
+          <input type="email" placeholder="Email" name="email" ng-blur="check(user.email,this)" ng-model="user.email" autocomplete="off" required="required">
+        </label>
+        <p ng-show="createForm.email.$error.email && createForm.$submitted">Invalid Email</p>
+        <p ng-show="createForm.email.$error.required && createForm.$submitted">Person's email is required</p>
+        <p ng-show="found">This email belongs to an existing user, we'll send that person the credits or adderesses</p>
+        <label class="item item-input validated">
+          <input type="text" placeholder="Name" name="addressee" ng-readonly="found" ng-model="user.addressee" autocomplete="off" required="required">
+        </label>
+        <p ng-show="createForm.addressee.$error.required && createForm.$submitted">Person's name is required</p>
+        <div class="padding">
+          <button class="button button-block" ng-class="{
+          'button-balanced':createForm.$valid&&!loading,
+          'button-stable':loading
+          }" type="submit">
+            <i class="icon placeholder-icon" ng-class="(loading)?'ion-loading-c':''"></i>
+            Save
+          </button>
+        </div>
+      </ion-list>
+    </form>
+  </ion-content>
+</div>

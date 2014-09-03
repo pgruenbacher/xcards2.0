@@ -1,0 +1,38 @@
+<ion-view title="Share stuff" broadcast-submit>
+	<ion-nav-buttons side="right">
+    	<button class="icon-right ion-ios7-arrow-forward button button-clear" submit-form="confirm">
+        	Save
+      	</button>
+   	</ion-nav-buttons>
+ 	<ion-content class="has-header">
+	 	<form name="transferForm" submit-on="confirm" on-valid-submit="confirm()" novalidate>
+			<div class="list">
+				<p>recipient: {{transfer.recipient.addressee}}</p>
+				<input type="hidden" name="email" ng-model="transfer.recipient.email" ng-required="!transfer.recipient.phoneNumber" readonly/>
+				<p>email: {{transfer.recipient.email}}</p>
+				<input type="hidden" name="phoneNumber" ng-model="transfer.recipient.phoneNumber" ng-required="!transfer.recipient.email"/>
+				<p>number: {{transfer.recipient.phoneNumber | tel}}</p>
+				<p ng-show="transferForm.email.$error.required||transferForm.phoneNumber.$error.required">At least phone or email required to contact the recipient</p>
+				<label class="item item-input validated">
+					<input type="number" name="credits" min="0" max="{{user.credits}}" ng-model="transfer.credits"/>
+				</label>
+				<p ng-show="transferForm.credits.$error.max">You only have {{user.credits}} credits to share</p>
+				<a ng-click="plus()" class="button button-stable">
+					<i class="icon ion-plus"></i>
+				</a>
+				<a ng-click="(transfer.credits==0)||minus()" class="button button-stable">
+					<i class="icon ion-minus"></i>
+				</a>
+				<div ng-click="addressesModal.show()" class="button button-positive button-block">
+					<i class="icon ion-share"></i>
+					Share Addressses
+				</div>
+				Selected Addresses
+				<ion-item ng-repeat="address in addresses | selected: addresses">
+					{{address.selected}} {{address.address}} 
+				</ion-item>
+				<button class="button button-block" type="submit">Confirm</button>
+		    </div>
+	    </form>
+	</ion-content>
+</ion-view>

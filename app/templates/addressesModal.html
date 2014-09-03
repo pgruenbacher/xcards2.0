@@ -1,0 +1,25 @@
+<div class="modal" ng-controller="AddressesModalCtrl">
+    <ion-header-bar class="bar-royal">
+      <button class="button" ng-click="addressesModal.hide()">
+        <i class="icon border-thin ion-close-round"></i>
+      </button>
+      <h1 class="title">Addresses</h1>
+      <button class="button" ng-click="addressesModal.hide()">
+        Continue
+      </button>
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" name="search" ng-model="search" placeholder="Search">
+        </label>
+      </div>
+      <ion-list>
+        <ion-item ng-class="{'selected':address.selected}" ng-click="toggle(address)" ng-repeat="address in addresses | filter:search" type="item-text-wrap">
+        {{address.addressee}} {{address.address}}
+        <i ng-show="address.selected" class="icon icon-right ion-checkmark"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+</div>

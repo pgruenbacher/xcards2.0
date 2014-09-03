@@ -1,0 +1,53 @@
+<div class="modal" ng-controller="RegisterCtrl">
+    <ion-header-bar class="bar-royal">
+      <button class="button button-clear" ng-click="registerModal.hide()">
+        <i class="icon border-thin icon-right ion-close-round"></i>
+      </button>
+      <h1 class="title">Register Account</h1>
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+      <form class="list" on-valid-submit="register(user,this)" name="registerForm" novalidate>
+        <div class="item item-divider">
+         Login
+        </div>
+        <div>Please Create an account. This will be the same account you can use to login on our website</div>
+        <div>{{message}}</div>
+        <label class="item item-input validated">
+          <input type="email" name="email" placeholder="Email" ng-model="user.email" autocomplete="off" required="required">
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <p ng-show="registerForm.email.$error.required && registerForm.$submitted">Your email is required</p>
+        <p ng-show="registerForm.email.$error.email && registerForm.$submitted">Invalid Email</p>
+        <label class="item item-input validated">
+          <input type="text" name="first" placeholder="First Name" ng-model="user.first" autocomplete="off" required="required">
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <p ng-show="registerForm.first.$error.required && registerForm.$submitted">Your first name is required</p>
+        <label class="item item-input validated">
+          <input type="text" name="last" placeholder="Last Name" ng-model="user.last" autocomplete="off" required="required">
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <p ng-show="registerForm.last.$error.required && registerForm.$submitted">Your last name is required</p>
+        <label class="item item-input validated">
+          <input type="password" name="password" placeholder="password" ng-model="user.password" autocomplete="off" ng-minLength="5" required="required">
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <p ng-show="registerForm.password.$error.required && registerForm.$submitted">Your password is required</p>
+        <p ng-show="registerForm.password.$error.minlength && registerForm.$submitted">5 characters at least</p>
+        <label class="item item-input validated">
+          <input type="password" name="password2" placeholder="Enter password again" ng-model="user.password2" autocomplete="off" password-match="user.password" required="required">
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <p ng-show="registerForm.password2.$error.required && registerForm.$submitted">Retype your password</p>
+        <p ng-show="registerForm.password2.$error.match && registerForm.$submitted">Your passwords do not match</p>
+        <label class="item item-input validated">
+          <input type="text" name="address" placeholder="address" ng-model="user.address" autocomplete="off" required="required">
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <p ng-show="registerForm.address.$error.required && registerForm.$submitted">Your address is required</p>
+        <div class="padding">
+          <button class="button icon-right ion-chevron-right button-block button-stable" type="submit">Register</button>
+        </div>
+      </form>
+    </ion-content>
+</div>

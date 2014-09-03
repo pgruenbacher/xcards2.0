@@ -1,0 +1,34 @@
+<div class="modal" ng-controller="LoginCtrl">
+    <ion-header-bar class="bar-royal">
+      <button class="button" ng-click="loginModal.hide()">
+        <i class="icon border-thin icon-right ion-close-round"></i>
+      </button>
+      <h1 class="title">Login</h1>
+      
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+      <form class="list">
+        <div class="item item-divider">
+         Login
+        </div>
+        <div>In order to proceed, sign in with an existing account you have with us, or create a new one.</div>
+        <div>{{message}}</div>
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="user.email" autocomplete="off" required>
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Password" ng-model="user.password" autocomplete="off" required>
+        </label>
+        <div class="padding">
+          <button class="button button-block button-stable" ng-click="login(user)">Login</button>
+        </div>
+        <button class="btn-auth btn-facebook" ng-click="facebook()">Login with <b>fudgebook</b></button>
+        <div class="item item-divider">
+         Or create a new account
+        </div>
+        <div class="padding">
+          <button class="button button-block button-stable" ng-click="register()">Create</button>
+        </div>
+      </form>
+    </ion-content>
+</div>

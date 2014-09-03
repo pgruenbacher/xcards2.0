@@ -1,0 +1,24 @@
+<ion-view title="Create Address">
+  	<ion-content class="has-header">
+	  	<form name="addressForm" on-valid-submit="create()" novalidate>
+			<div class="list">
+			  <label class="item item-input validated">
+			    <input ng-model="address.addressee" name="name" type="text" placeholder="Name" required>
+			  </label>
+			  <p ng-show="addressForm.name.$error.required && addressForm.$submitted">Name is required</p>
+			  <label class="item item-input validated">
+			    <input ng-model="address.email" name="email" type="email" placeholder="Email" required>
+			  </label>
+			  <p ng-show="addressForm.email.$error.required && addressForm.$submitted">Email is required</p>
+			  <p ng-show="addressForm.email.$error.email && addressForm.$submitted">Email Format</p>
+			  <label class="item item-input validated">
+			    <textarea ng-model="address.address" name="address" placeholder="Address" required></textarea>
+			  </label>
+			  <p ng-show="addressForm.address.$error.required && addressForm.$submitted">Address is required</p>
+			</div>
+			<button type="submit" class="button button-positive">
+				Save
+			</button>
+		</form>
+	</ion-content>
+</ion-view>

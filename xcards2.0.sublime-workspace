@@ -1,0 +1,678 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cordova",
+				"cordovaCamera"
+			],
+			[
+				"password",
+				"passwordMatch"
+			],
+			[
+				"header",
+				"headersGetter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/styles/main.sass",
+			"settings":
+			{
+				"buffer_size": 688,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/_app.sass",
+			"settings":
+			{
+				"buffer_size": 894,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/directives.js",
+			"settings":
+			{
+				"buffer_size": 6494,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/directives.imageContainer.js",
+			"settings":
+			{
+				"buffer_size": 5805,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/img-container.html",
+			"settings":
+			{
+				"buffer_size": 227,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 2864,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/cordova.mock.js",
+			"settings":
+			{
+				"buffer_size": 2487,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/single.html",
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/pgrue_000/xcards2.0/Gruntfile.js",
+		"/C/Users/pgrue_000/xcards2.0/app/scripts/app.js",
+		"/C/Users/pgrue_000/xcards2.0/app/templates/login.html",
+		"/C/Users/pgrue_000/xcards2.0/www/styles/main.css",
+		"/C/Users/pgrue_000/xcards2.0/app/scripts/controllers.js",
+		"/C/Users/pgrue_000/xcards2.0/app/scripts/config.js",
+		"/C/Users/pgrue_000/Pictures/chloeheader.jpg",
+		"/C/Users/pgrue_000/xcards2.0/www/index.html",
+		"/C/Users/pgrue_000/xcards2.0/www/scripts/config.js",
+		"/C/Users/pgrue_000/xcards2.0/www/scripts/directives.js",
+		"/C/Users/pgrue_000/xcards2.0/app/scripts/directives.js",
+		"/C/Users/pgrue_000/xcards2.0/app/scripts/services.js",
+		"/C/Users/pgrue_000/xcards2.0/www/styles/_app.sass",
+		"/C/Users/pgrue_000/xcards2.0/app/scripts/cordova.mock.js",
+		"/C/Users/pgrue_000/xcards2.0/app/cordova.mock.js",
+		"/C/Users/pgrue_000/xcards2.0/app/index.html",
+		"/C/Users/pgrue_000/xcards2.0/test/spec/controllers.js",
+		"/C/Users/pgrue_000/xcards2.0/app/styles/_app.sass",
+		"/C/Users/pgrue_000/xcards2.0/app/images/chloeheader.jpg",
+		"/C/Users/pgrue_000/xcards2.0/app/bower_components/angular-http-auth/src/http-auth-interceptor.js",
+		"/C/Users/pgrue_000/xcards2.0/config.xml",
+		"/C/Users/pgrue_000/xcards2.0/bower.json",
+		"/C/Users/pgrue_000/xcards2.0/package.json",
+		"/C/Users/pgrue_000/xcards2.0/app/templates/tabs.html",
+		"/C/Users/pgrue_000/xcards2.0/node_modules/grunt-contrib-compass/tasks/compass.js",
+		"/C/Users/pgrue_000/xcards2.0/app/styles/_variables.sass",
+		"/C/Users/pgrue_000/xcards2.0/www/scripts/scripts.js",
+		"/C/Users/pgrue_000/xcards/www/lib/ngCordova/dist/ng-cordova.js",
+		"/C/Users/pgrue_000/xcards/www/templates/img-container.html",
+		"/C/Users/pgrue_000/xcards/scss/ionic.app.scss",
+		"/C/Users/pgrue_000/xcards/npm-debug.log",
+		"/C/Users/pgrue_000/xcards/package.json",
+		"/C/Users/pgrue_000/xcards/gulpfile.js",
+		"/C/Users/pgrue_000/xcards/www/js/services.js",
+		"/C/Users/pgrue_000/xcards/www/templates/createModal.html",
+		"/C/Users/pgrue_000/xcards/www/templates/address-create.html",
+		"/C/Users/pgrue_000/xcards/www/templates/preferenceModal.html",
+		"/C/Users/pgrue_000/xcards/www/templates/importModal.html",
+		"/C/Users/pgrue_000/xcards/plugins/org.apache.cordova.device/src/firefoxos/DeviceProxy.js",
+		"/C/Users/pgrue_000/xcards/plugins/org.apache.cordova.device/src/ios/CDVDevice.m",
+		"/C/Users/pgrue_000/xcards/www/img/chloeheader.jpg",
+		"/C/Users/pgrue_000/xcards/www/img/ionic.png",
+		"/C/Users/pgrue_000/xcards/www/templates/tab-card.html",
+		"/C/Users/pgrue_000/xcards/www/templates/tab-addresses.html",
+		"/C/Users/pgrue_000/xcards/www/templates/tab-dash.html",
+		"/C/Users/pgrue_000/xcards/www/templates/address-edit.html",
+		"/C/Users/pgrue_000/xcards/www/templates/transfer.html",
+		"/C/Users/pgrue_000/xcards/www/templates/addressesModal.html",
+		"/C/Users/pgrue_000/xcards/www/templates/register.html",
+		"/C/Users/pgrue_000/xcards/www/cordova.mock.js",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-local-storage/bower.json",
+		"/C/Users/pgrue_000/xcards/www/index.html",
+		"/C/Users/pgrue_000/xcards/www/templates/tabs.html",
+		"/C/Users/pgrue_000/xcards/www/templates/share.html",
+		"/C/Users/pgrue_000/xcards/www/templates/login.html",
+		"/C/Users/pgrue_000/xcards/www/lib/ionic/scss/_items.scss",
+		"/C/Users/pgrue_000/xcards/www/lib/ionic/scss/_select.scss",
+		"/C/Users/pgrue_000/xcards/bower.json",
+		"/C/Users/pgrue_000/xcards/www/lib/ngCordova/.bower.json",
+		"/C/Users/pgrue_000/xcards/www/lib/ngCordova/bower.json",
+		"/C/Users/pgrue_000/xcards/www/lib/ngCordova/src/plugins/contacts.js",
+		"/C/Users/pgrue_000/xcards/www/lib/angular/angular.js",
+		"/C/Users/pgrue_000/xcards/www/lib/restangular/dist/restangular.js",
+		"/C/Users/pgrue_000/xcards/www/js/directives.js",
+		"/C/Users/pgrue_000/xcards/platforms/android/assets/www/index.html",
+		"/C/Users/pgrue_000/xcards/www/config.xml",
+		"/C/Users/pgrue_000/xcards/config.xml",
+		"/C/Users/pgrue_000/xcards/www/js/app.js",
+		"/C/Users/pgrue_000/xcards/ionic.project",
+		"/C/Users/pgrue_000/xcards/www/js/controllers.js",
+		"/C/Users/pgrue_000/xcards/www/css/logo.css",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-facebook/lib/angular-facebook.js",
+		"/C/Users/pgrue_000/xcards/.gitignore",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-facebook/package.json",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-facebook/.bower.json",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-facebook/bower.json",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-facebook/lib/angular-facebook-phonegap.js",
+		"/C/Users/pgrue_000/xcards/www/css/ionic.app.css",
+		"/C/Users/pgrue_000/xcards/www/lib/ionic/scss/_loading.scss",
+		"/C/Users/pgrue_000/xcards/www/lib/ionic/scss/ionic.scss",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-local-storage/angular-local-storage.js",
+		"/C/Users/pgrue_000/xcards/www/templates/address-detail.html",
+		"/C/Users/pgrue_000/xcards/www/lib/lodash/dist/lodash.js",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-resource/angular-resource.js",
+		"/C/Users/pgrue_000/xcards/www/lib/restangular/karma.conf.js",
+		"/C/Users/pgrue_000/xcards/www/lib/angular-http-auth/src/http-auth-interceptor.js",
+		"/C/Users/pgrue_000/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
+		"/C/Users/pgrue_000/xcards/www/templates/menu.html",
+		"/C/Users/pgrue_000/xcards/test/karma.conf.js",
+		"/C/Users/pgrue_000/xcards/test/unit/controllersSpec.js",
+		"/C/Users/pgrue_000/xcards/test/protractor-conf.js",
+		"/C/Users/pgrue_000/xcards/test/unit/servicesSpec.js",
+		"/C/Users/pgrue_000/xcards/Gruntfile.js",
+		"/C/Users/pgrue_000/xcards/www/.gitignore",
+		"/C/Users/pgrue_000/xcards/sublimeProject.sublime-workspace",
+		"/C/Users/pgrue_000/xcards/ionic.sublime-workspace"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"click",
+			"backdropClick",
+			"var OldValue",
+			"oldValue",
+			"index.html",
+			"build",
+			"ng",
+			"ripple",
+			"compass",
+			"sass",
+			"wiredep",
+			"serve",
+			"ripple",
+			"ngconstant",
+			"jshint",
+			"access_token",
+			"\"",
+			"ct",
+			"ct)",
+			"ct",
+			"access_token",
+			"cache_key",
+			"self",
+			"ngconstant",
+			"authService",
+			"getAccess",
+			"_ngModule",
+			"spawn",
+			"win",
+			"spawn",
+			"bower",
+			"bo",
+			"ionic",
+			"css",
+			"bowe",
+			"bower",
+			"camera",
+			"contacts",
+			"cacheandCall",
+			"transfer",
+			"transferService",
+			"dash",
+			"confirm",
+			"selected",
+			"addressesModal",
+			"preference",
+			"valid",
+			"validate",
+			"bag",
+			"stripChars",
+			"trim",
+			"isInteger",
+			"isstring",
+			"isString",
+			"null",
+			"recipient.addressee",
+			"preferred",
+			"none found",
+			"confirm",
+			"enco",
+			"encoded",
+			"create:",
+			"param",
+			".post",
+			"transferCtrl",
+			"ngMin",
+			"saveCreate",
+			"UserSErvice",
+			"LocalStorage",
+			"common",
+			"auth-logout",
+			"getUser(",
+			"saveUser",
+			"UserSErvice",
+			"localStorageService",
+			"localStorage",
+			"CacheAndCall",
+			"userService",
+			"authenticate(",
+			"USerSErvice",
+			"broadcast",
+			"[0",
+			"preference",
+			"prefe",
+			"preferred",
+			"prefer",
+			"prefferedCtrl",
+			"createModal",
+			"createModalCtrl",
+			"createModal",
+			"createCtrl",
+			"back",
+			"push",
+			"radio",
+			"addresse ",
+			"addresse",
+			"save",
+			"preference",
+			"0055",
+			"length",
+			"permission",
+			"saveUser",
+			"send",
+			"sms",
+			"send",
+			"destroy",
+			"$destroy",
+			"modal.remove",
+			"modal.hide",
+			"[item]",
+			".item",
+			"item",
+			"name.formatted",
+			"config",
+			"config\\",
+			"config",
+			"cordova",
+			"timeout",
+			"setValid",
+			"setValidity",
+			"form",
+			"$parse",
+			"register",
+			"stateParams",
+			"token",
+			"provider",
+			"provider\\",
+			"get"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/styles/main.sass",
+					"settings":
+					{
+						"buffer_size": 688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/styles/_app.sass",
+					"settings":
+					{
+						"buffer_size": 894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 140.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/directives.js",
+					"settings":
+					{
+						"buffer_size": 6494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2390.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/scripts/directives.imageContainer.js",
+					"settings":
+					{
+						"buffer_size": 5805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								690,
+								690
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 243.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/templates/img-container.html",
+					"settings":
+					{
+						"buffer_size": 227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/index.html",
+					"settings":
+					{
+						"buffer_size": 2864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2821,
+								2821
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/cordova.mock.js",
+					"settings":
+					{
+						"buffer_size": 2487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2367,
+								2367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/templates/single.html",
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"templates/",
+				"app/templates/single.html"
+			],
+			[
+				"conrollers",
+				"www/js/controllers.js"
+			],
+			[
+				"addressesmoda",
+				"www/templates/addressesModal.html"
+			],
+			[
+				"direc",
+				"www/js/directives.js"
+			],
+			[
+				"login.",
+				"www/templates/login.html"
+			],
+			[
+				"www/ind",
+				"www/index.html"
+			],
+			[
+				"www",
+				"www/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true
+}
