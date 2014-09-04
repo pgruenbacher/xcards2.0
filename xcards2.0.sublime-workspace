@@ -31,7 +31,7 @@
 			"file": "app/styles/_app.sass",
 			"settings":
 			{
-				"buffer_size": 894,
+				"buffer_size": 3931,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,7 +47,15 @@
 			"file": "app/scripts/directives.imageContainer.js",
 			"settings":
 			{
-				"buffer_size": 5805,
+				"buffer_size": 4963,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/image-container-popover.html",
+			"settings":
+			{
+				"buffer_size": 175,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,23 +63,7 @@
 			"file": "app/templates/img-container.html",
 			"settings":
 			{
-				"buffer_size": 227,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 2864,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/cordova.mock.js",
-			"settings":
-			{
-				"buffer_size": 2487,
+				"buffer_size": 432,
 				"line_ending": "Windows"
 			}
 		},
@@ -81,6 +73,30 @@
 			{
 				"buffer_size": 166,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/bower_components/ionic/js/angular/directive/popover.js",
+			"settings":
+			{
+				"buffer_size": 409,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/bower_components/ionic/js/angular/directive/popoverView.js",
+			"settings":
+			{
+				"buffer_size": 245,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/bower_components/ionic/scss/_popover.scss",
+			"settings":
+			{
+				"buffer_size": 2753,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -108,6 +124,12 @@
 	},
 	"file_history":
 	[
+		"/C/Users/pgrue_000/xcards2.0/app/bower_components/ionic/js/angular/directive/actionSheet.js",
+		"/C/Users/pgrue_000/xcards2.0/app/bower_components/ionic/scss/_action-sheet.scss",
+		"/C/Users/pgrue_000/xcards2.0/app/templates/partials/image-container-popover.html",
+		"/C/Users/pgrue_000/xcards2.0/app/bower_components/ionic/js/angular/service/actionSheet.js",
+		"/C/Users/pgrue_000/xcards2.0/app/cordova.mock.js",
+		"/C/Users/pgrue_000/xcards2.0/app/index.html",
 		"/C/Users/pgrue_000/xcards2.0/Gruntfile.js",
 		"/C/Users/pgrue_000/xcards2.0/app/scripts/app.js",
 		"/C/Users/pgrue_000/xcards2.0/app/templates/login.html",
@@ -122,8 +144,6 @@
 		"/C/Users/pgrue_000/xcards2.0/app/scripts/services.js",
 		"/C/Users/pgrue_000/xcards2.0/www/styles/_app.sass",
 		"/C/Users/pgrue_000/xcards2.0/app/scripts/cordova.mock.js",
-		"/C/Users/pgrue_000/xcards2.0/app/cordova.mock.js",
-		"/C/Users/pgrue_000/xcards2.0/app/index.html",
 		"/C/Users/pgrue_000/xcards2.0/test/spec/controllers.js",
 		"/C/Users/pgrue_000/xcards2.0/app/styles/_app.sass",
 		"/C/Users/pgrue_000/xcards2.0/app/images/chloeheader.jpg",
@@ -221,6 +241,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"backdropClick",
 			"click",
 			"backdropClick",
 			"var OldValue",
@@ -347,8 +368,7 @@
 			"stateParams",
 			"token",
 			"provider",
-			"provider\\",
-			"get"
+			"provider\\"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -366,7 +386,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -400,24 +420,24 @@
 					"file": "app/styles/_app.sass",
 					"settings":
 					{
-						"buffer_size": 894,
+						"buffer_size": 3931,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								443,
-								443
+								2353,
+								2353
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 140.0,
+						"translation.y": 1458.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -455,15 +475,15 @@
 					"file": "app/scripts/directives.imageContainer.js",
 					"settings":
 					{
-						"buffer_size": 5805,
+						"buffer_size": 4963,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								690,
-								690
+								3238,
+								3238
 							]
 						],
 						"settings":
@@ -473,25 +493,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 243.0,
+						"translation.y": 1836.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "app/templates/img-container.html",
+					"file": "app/templates/image-container-popover.html",
 					"settings":
 					{
-						"buffer_size": 227,
+						"buffer_size": 175,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								130
+								175,
+								175
 							]
 						],
 						"settings":
@@ -506,62 +526,33 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/index.html",
+					"file": "app/templates/img-container.html",
 					"settings":
 					{
-						"buffer_size": 2864,
+						"buffer_size": 432,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2821,
-								2821
+								224,
+								224
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "app/cordova.mock.js",
-					"settings":
-					{
-						"buffer_size": 2487,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2367,
-								2367
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 756.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "app/templates/single.html",
 					"settings":
 					{
@@ -582,6 +573,86 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/bower_components/ionic/js/angular/directive/popover.js",
+					"settings":
+					{
+						"buffer_size": 409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/bower_components/ionic/js/angular/directive/popoverView.js",
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/bower_components/ionic/scss/_popover.scss",
+					"settings":
+					{
+						"buffer_size": 2753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								413,
+								678
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 313.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

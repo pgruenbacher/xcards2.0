@@ -1,47 +1,157 @@
+// Size helper mixin
+// ---
+// @param [number] $width: width
+// @param [number] $height ($width): height
+// ---
+@mixin size($width, $height: $width)
+    width: $width
+    height: $height
+
+
+// [Private] 
+// Position helper mixin
+// Article about it: http://hugogiraudel.com/2013/08/05/offsets-sass-mixin/
+// ---
+// @param [string] $position: position type
+// @param [list] $args: list of offsets and values
+// ---
+@mixin _position($position, $args)
+    @each $o in top right bottom left
+        $i: index($args, $o)
+        @if $i and $i + 1 <= length($args) and type-of( nth($args, $i + 1) ) == number
+            #{$o}: nth($args, $i + 1)
+    position: $position
+
+
+// Absolute positioning helper mixin
+// Article about it: http://hugogiraudel.com/2013/08/05/offsets-sass-mixin/
+// ---
+// @param [list] $args: list of offsets and values
+// ---
+@mixin absolute($args)
+    @include _position(absolute, $args)
+
+
+// Arrow helper mixin
+// ---
+// @param [string] $direction: arrow direction
+// @param [list] $position: list of offsets and values
+// @param [color] $color (inherit): arrow color
+// @param [number] $size (1em): arrow size
+// ---
+@mixin triangle($direction, $position, $color: currentColor, $size: 1em)
+    // Make sure the direction is valid
+    @if not index(top right bottom left, $direction)
+        @warn "Direction must be one of top, right, bottom or left."
+
+
+    @else
+        @include absolute($position) // Position
+        @include size(0) // Size
+        content: ''
+        z-index: 2
+
+        border-#{opposite-position($direction)}: $size * 1.5 solid $color
+        $perpendicular-borders: $size solid transparent
+    
+        @if $direction == top or $direction == bottom 
+            border-left:   $perpendicular-borders
+            border-right:  $perpendicular-borders
+        
+
+        @else if $direction == right or $direction == left
+            border-bottom: $perpendicular-borders
+            border-top:    $perpendicular-borders
+
+
 form i.icon.error
-	color: $myPrettyColor
+    color: $myPrettyColor
 
 form input + i.icon.error 
-	display: none
-	margin-left: 8px
+    display: none
+    margin-left: 8px
 
  
 form.ng-submitted input.ng-invalid + i.icon.error 
-	display: block
+    display: block
 
  
 form .has-error
-	border: 1px solid darken($assertive, 15%)
+    border: 1px solid darken($assertive, 15%)
 
  
 form .has-success
-	border: 1px solid darken($balanced, 15%)
+    border: 1px solid darken($balanced, 15%)
 
  
 form.ng-submitted input.ng-valid + i.icon.error
-	display: none
-.background-pink
-	background: pink
+    display: none
+
+.image-popover
+    // Centering
+    max-width: 20em
+    margin: 0 auto
+
+    // Enable absolute positioning for pseudo-element
+    position: relative
+
+    // Aesthetics
+    background: #3498db
+    padding: .5em
+    border-radius: .15em
+    filter: drop-shadow(0 .15em .1em rgba(0,0,0,.25))
+
+    // Font
+    color: white
+    text-align: center
+    font-weight: bold
+
+    // Triangle
+    &:before 
+        @include triangle($direction : bottom, $position  : top 100% left 1em, $color     : #3498db)
+
+
+
+.image-container-backdrop
+    @include transition(background-color 300ms ease-in-out)
+    width: 100%
+    padding: 40px 0px
+    background-color: rgba(0,0,0,0)
+    &.active
+        background-color: rgba(0,0,0,0.2)
+.image-container-wrapper
+    position: relative
+    width: 50px
+    height: 33px
+    margin: 0px
+    border: 0px
+    &.expanded
+        width: 200px
+        height: 130px
+        margin: 60px auto
+        border: 1px solid gray
+        border-radius: 2px
+.transition-zoom
+    @include transition(width 0.4s ease-out, height 0.4s ease-out, margin 0.4s ease-out)
 .transition-05s
-	@include transition(left 0.2s ease-out, top 0.2s ease-out)
+    @include transition(left 0.2s ease-out, top 0.2s ease-out)
 .image-placeholder-icon
-	background: url('/images/ImageIcon.gif')
+    background: url('/images/ImageIcon.gif')
 .img-container
-	overflow: hidden
-	width: 200px
-	height: 130px
-	margin: 4px 10px 4px 10px
+    overflow: hidden
+    width: 100%
+    height: 100%
 .full-width
-	width: 100%
-	height: auto
+    width: 100%
+    height: auto
 .full-height
-	height: 100%
-	width: auto
+    height: 100%
+    width: auto
 .accelerator
-	-webkit-transform: translate3d(0, 0, 0)
+    -webkit-transform: translate3d(0, 0, 0)
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button
-	-webkit-appearance: none
-	margin: 0
+    -webkit-appearance: none
+    margin: 0
 

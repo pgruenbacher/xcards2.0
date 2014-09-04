@@ -13,36 +13,6 @@ angular.module('Xcards20.directives.imageContainer', [])
     scope: true
   };
 })
-.directive('clickOutside',['$document',function($document){
-  /* Relies on isActive attribute to know whether to listen for clicking outside element*/
-  function link(scope,element,attrs){
-    var oldValue;
-    var onClick = function (event) {
-      var isChild = element.has(event.target).length > 0;
-      var isSelf = element[0] === event.target;
-      var isInside = isChild || isSelf;
-      if (!isInside) {
-        scope.$apply(attrs.clickOutside);
-        console.log('apply');
-      }
-    };
-    console.log(scope, attrs, attrs.isActive);
-    attrs.$observe('isActive', function(newValue) {
-      console.log('change',oldValue,newValue);
-      if (newValue !== oldValue && newValue === 'true') {
-        console.log('bind');
-        $document.bind('click', onClick);
-      }
-      else if (newValue !== oldValue && newValue === 'false') {
-        $document.unbind('click', onClick);
-      }
-      oldValue=newValue;
-    });
-  }
-  return{
-    link: link
-  };
-}])
 .directive('resizable',function(){
   function link(scope,elem,attrs){
     var resized=document.createEvent('MutationEvent');
@@ -90,6 +60,7 @@ angular.module('Xcards20.directives.imageContainer', [])
       containment();
     });
     element.on('load',function(){
+      element.css({left:0+'px'});
       containment();
     });
     element.on('mousedown', function(event) {
@@ -149,6 +120,7 @@ angular.module('Xcards20.directives.imageContainer', [])
 })
 .directive('imageContainer',['$ionicActionSheet','$cordovaCamera',function($ionicActionSheet,$cordovaCamera){
   function link(scope,elem,attrs){
+    scope.zoomed=false;
     var buttons=[
       {text:'Camera',
       clicked:function(){
@@ -177,9 +149,11 @@ angular.module('Xcards20.directives.imageContainer', [])
         console.log('facebook');
       }}
     ];
-    scope.zoomOut=function(){
-      console.log('zoom out');
-      scope.zoomed=false;
+    scope.zoomOut=function(event){
+      if(event.target===elem[0]){
+        scope.zoomed=false;
+        console.log('zoom out',scope,scope.zoomed);
+      }
     };
     scope.zoom=function(){
       console.log('zoom',attrs);

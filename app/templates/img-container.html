@@ -1,3 +1,10 @@
-<div class="img-container single-image image-placeholder-icon" ng-click="choose()" click-outside="zoomOut()" is-active="{{zoomed}}">
-	<img resizable="resizable" draggable="draggable" class="" ng-src="{{imageURI}}"></img>
+<div class="image-container-backdrop" ng-class="{active:zoomed}" ng-click="zoomOut($event)">
+	<div class="image-container-wrapper transition-zoom" ng-class="{expanded:zoomed}">
+		<div class="image-popover">
+			<h1>Hello</h1>
+		</div>
+		<div class="img-container single-image image-placeholder-icon" ng-click="choose()">
+			<img resizable="resizable" draggable="draggable" class="" ng-src="{{imageURI}}"></img>
+		</div>
+	<div>
 </div>
