@@ -1,13 +1,13 @@
-<ion-view title="Image">
+<ion-view title="Message">
 	<ion-nav-buttons side="right">
   	<button class="icon-right ion-ios7-arrow-forward button button-clear" ng-click="continue()">
     	Save
   	</button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-  <h1>Click to edit</h1>
-		<div class="single-image-card">
-			<image-container my-image="singleImage"></image-container>
-		</div>
+    <h3>Create message</h3>
+    <div>
+      <back-card-container message="message" ng-click="zoom()"></back-card-container>
+    </div>
 	</ion-content>
 </ion-view>

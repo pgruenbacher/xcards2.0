@@ -12,6 +12,31 @@ angular.module('Xcards20.services', ['http-auth-interceptor'])
     }
   };
 })
+.factory('ImagesService',function(Restangular,CacheAndCall,localStorageService){
+  var imageAPI=Restangular.all('imageAPI'),
+  tempImages=[];
+  return{
+    all:function(callback){
+      CacheAndCall.getCacheList(imageAPI,{},function(response){
+        console.log(response);
+        callback(response);
+      });
+    },
+    get:function(){
+
+    },
+    saveTemp:function(image){
+      tempImages.push({
+        x:image.x,
+        y:image.y,
+        w:image.w,
+        h:image.h,
+        fileURI:image.fileURI
+      });
+      console.log(tempImages);
+    }
+  };
+})
 .factory('TransferService',function(Restangular,UserService,CacheAndCall){
   //transfers structure
   /*var transfers=[{

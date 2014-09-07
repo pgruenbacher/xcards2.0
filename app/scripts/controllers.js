@@ -257,8 +257,19 @@ angular.module('Xcards20.controllers', [])
 .controller('CardCtrl', function($scope) {
 
 })
-.controller('SingleCtrl',function($scope){
-  
+.controller('SingleCtrl',function($scope,ImagesService,$state){
+  $scope.singleImage={}; //Will be updated by image-container-directiv
+  $scope.continue=function(){
+    console.log($scope.singleImage);
+    var  singleImage=$scope.singleImage;
+    if(singleImage.w>0 || singleImage.h>0){
+      ImagesService.saveTemp(singleImage);
+      $state.go('app.build-message');
+    }
+  };
+})
+.controller('MessageCtrl',function($scope,ImagesService){
+
 })
 /*Controller for all of app to detect http authourization*/
 .controller('AppCtrl', function($scope, $state, $ionicModal) {

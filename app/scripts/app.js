@@ -14,6 +14,7 @@ angular.module('Xcards20',
   'Xcards20.services',
   'Xcards20.directives',
   'Xcards20.directives.imageContainer',
+  'Xcards20.directives.cardContainer',
   'restangular',
   'LocalStorageModule',
   'ngCordova',
@@ -119,6 +120,15 @@ angular.module('Xcards20',
       'tab-card': {
         templateUrl: 'templates/single.html',
         controller: 'SingleCtrl'
+      }
+    }
+  })
+.state('app.build-message', {
+    url: '/build/message',
+    views: {
+      'tab-card': {
+        templateUrl: 'templates/message.html',
+        controller: 'MessageCtrl'
       }
     }
   })

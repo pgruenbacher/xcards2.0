@@ -1,10 +1,11 @@
 <div class="image-container-backdrop" ng-class="{active:zoomed}" ng-click="zoomOut($event)">
-	<div class="image-container-wrapper transition-zoom" ng-class="{expanded:zoomed}">
-		<div class="image-popover">
-			<h1>Hello</h1>
+	<div class="image-container-wrapper transition-zoom {{(landscape)?'landscape':'portrait'}}" ng-class="{expanded:zoomed}">
+		<div class="image-popover" ng-show="zoomed">
+			<button ng-click="plus()" class="button"><i class="icon ion-plus"></i></button>
+            <button ng-click="minus()" class="button"><i class="icon ion-minus"></i></button>
+            <button ng-click="rotate()" class="button"><i class="{{(landscape)?'icon-Orientation_IconPortrait':'icon-Orientation_IconLandscape'}}"></i></button>
 		</div>
 		<div class="img-container single-image image-placeholder-icon" ng-click="choose()">
-			<img resizable="resizable" draggable="draggable" class="" ng-src="{{imageURI}}"></img>
+			<img maintain-aspect="zoomed" my-image="myImage" resizable="resizable" draggable="{{zoomed}}" ng-src="{{imageURI}}"></img>
 		</div>
-	<div>
 </div>
